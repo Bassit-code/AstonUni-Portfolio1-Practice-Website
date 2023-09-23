@@ -1,0 +1,957 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: myFont3;
+    src: url(Fonts/FiraCode-VariableFont_wght.ttf);
+  }
+
+/*color for website background*/
+body{
+    background: #edf2fc;
+    font-family: myFont3;
+}
+
+
+.Home{
+    height: 100vh;
+    width: 100%;
+    background: #edf2fc;
+    position: relative;
+}
+
+nav{
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*make the mouse turn into pointer when hovering over*/
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #606163;
+}
+
+/*Change colour of navigation bar  when hovering over*/
+nav ul li a:hover{
+    color: #8F00FF;
+}
+
+.info{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.info h1{
+    font-size: 70px;
+    color: #8F00FF;
+    margin-bottom: 20px;
+    text-shadow:5px 0px 0px black, 5px 0px 10px #8F00FF;
+
+}
+
+/*separated using span tag to add different colour*/
+span{
+    color: black;
+    text-shadow: 5px 0px 5px #8F00FF;
+}
+
+.info p{
+    color: #606163;
+    line-height: 22px;
+}
+
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+/*styling for image plus transition*/
+.img-box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s;
+}
+
+/*hover effect for image*/
+.img-box:hover .back-img{
+    bottom: 40px;
+}
+
+.social-links{
+    margin-left: 8%;
+    margin-top: 100px;
+}
+
+.social-links a{
+    font-size: 30px;
+    color: black;
+    margin-right: 20px;
+}
+
+/* Apply styles when hovering over social links */
+.social-links a:hover {
+    color: #8F00FF; /* Change the text color to #8F00FF */
+    transform: scale(1.3); /* Scale the icon by 1.3 times on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+/*Skills section styling*/
+#skills {
+    background-image: url('../Images & Icons/pankaj-patel-Fi-GJaLRGKc-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.skill h1{
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    margin-top: 2%;
+    color: whitesmoke;
+    text-decoration: #8F00FF underline;
+    text-shadow: 5px 0px 0px black, 5px 0px 10px #8F00FF; ;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border: 1.5px solid black;
+    position: relative;
+    border-radius:  5px;
+    background-color:#8F00FF;
+    box-shadow: 2px 2px 10px #8F00FF;
+    margin-left: 2%;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.box1 h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.box1 i{
+    font-size: 69px;
+    margin-top: 5px;
+    color: orange;
+    position: relative;
+    top: -85px
+}
+
+.progress-bar-container {
+    width: 75%;
+    height: 30px;
+    border: 1.5px solid black;
+    position: relative;
+    border-radius: 30px;
+}
+
+  .progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #FFBF00;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width 2s ease-in-out;
+    border-radius: 40px;
+  }
+
+  .progress-bar-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+.box2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border: 1.5px solid black;
+    position: relative;
+    border-radius:  5px;
+    background-color:#8F00FF;
+    box-shadow: 2px 2px 10px #8F00FF;;
+    margin-left: 35%;
+    padding: 20px;
+    margin-top: -392px;
+}
+
+.box2 h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.box2 img{
+    font-size: 69px;
+    margin-top: 5px;
+    position: relative;
+    top: -100px
+}
+
+.progress-bar-container-2{
+    width: 75%;
+    height: 30px;
+    border: 1.5px solid black;
+    position: relative;
+    border-radius:  30px;
+
+}
+
+.progress-bar-2{
+    width: 0;
+    height: 100%;
+    background-color: #39FF14;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width 2s ease-in-out;
+    border-radius: 30px;
+}
+
+.progress-bar-label-2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.box3{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border: 1.5px solid black;
+    position: relative;
+    border-radius:  5px;
+    background-color:#8F00FF;
+    box-shadow: 2px 2px 10px #8F00FF;;
+    margin-left: 68%;
+    padding: 20px;
+    margin-top: -392px;
+}
+
+.box3 h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.box3 img{
+    font-size: 69px;
+    margin-top: 5px;
+    position: relative;
+    top: -100px
+}
+
+.progress-bar-container-3{
+    width: 75%;
+    height: 30px;
+    border: 1.5px solid black;
+    position: relative;
+    border-radius:  30px;
+
+}
+
+.progress-bar-3{
+    width: 0;
+    height: 100%;
+    background-color: #C7EA46;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width 2s ease-in-out;
+    border-radius:   30px;
+}
+
+.progress-bar-label-3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.box4{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border: 1.5px solid black;
+    position: relative;
+    border-radius:  5px;
+    background-color:#8F00FF;
+    box-shadow: 2px 2px 10px #8F00FF;;
+    margin-left: 35%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.box4 h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.box4 img{
+    font-size: 45px;
+    margin-top: 5px;
+    position: relative;
+    top: -100px;
+
+}
+
+.progress-bar-container-4{
+    width: 75%;
+    height: 30px;
+    border: 1.5px solid black;
+    position: relative;
+    border-radius:  30px;
+
+}
+
+.progress-bar-4{
+    width: 0;
+    height: 100%;
+    background-color: #FFBF00;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width 2s ease-in-out;
+    border-radius:   30px;
+}
+
+.progress-bar-label-4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*Testimonials styling*/
+.testimonials{
+    padding: 40px 0;
+    background: #edf2fc;
+    color: black;
+    text-align: center;
+
+  }
+  .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+
+  .border{
+    width: 200px;
+    height: 5px;
+    background: #8F00FF;
+    margin: 26px auto;
+  }
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  .testimonial{
+    background: #8F00FF;
+    padding: 30px;
+    border-radius: 10%;
+    box-shadow: 2px 2px 10px black, 2px 2px 15px #8F00FF ;
+    border: 2px solid black;
+  }
+  .testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .name{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 20px 0;
+
+    font-weight: bold;
+  }
+  .stars{
+    color: gold;
+    margin-bottom: 20px;
+  }
+/*Founder profile styling*/
+  .about-us{
+    padding: 40px 0;
+    background: #edf2fc;
+    color: #8F00FF;
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 5px 0px 0px black, 5px 0px 10px #8F00FF;;
+  }
+
+.line{
+    width: 100px;
+    height: 5px;
+    background: #8F00FF;
+    margin: 26px auto;
+}
+
+.founder img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    margin-left: 15%;
+    margin-top: -2%;
+    margin-right: 50%;
+    border: 1.5px solid #8F00FF;
+    box-shadow: 2px 2px 10px black, 2px 2px 15px #8F00FF;
+  }
+
+.founderName{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 35%;
+    margin-top: -12%;
+
+}
+
+.founder h3{
+    font-size: 13px;
+    margin-left: 36%;
+    margin-top: 2%;
+}
+
+.founder blockquote{
+    color: #606163;
+    margin-left: 32%;
+    margin-top: 2%;
+}
+
+.founder-2 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    margin-left: 15%;
+    margin-top: 5%;
+    border: 1.5px solid black; ;
+    box-shadow: 2px 2px 10px #8F00FF, 2px 2px 15px black;
+
+  }
+
+  .founderName-2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 34%;
+    margin-top: -12%;
+
+}
+
+.founder-2 h3{
+    font-size: 13px;
+    margin-left: 35%;
+    margin-top: 2%;
+}
+
+.founder-2 blockquote{
+    color: #606163;
+    margin-left: 32%;
+    margin-top: 2%;
+}
+/*Footer styling*/
+footer {
+
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10%;
+  }
+
+.footer-info h2{
+    margin-right: 5%;
+    font-size: 30px;
+}
+
+.footer-info p{
+    margin-right: 5%;
+    margin-top: 1%;
+
+}
+
+.socials{
+    margin-right: 5%;
+    margin-top: 1%;
+}
+
+.socials a{
+    font-size: 30px;
+    color: white;
+    margin-right: 20px;
+}
+
+.socials a:hover{
+    color: #8F00FF;
+}
+
+header{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline #8F00FF;
+    color: #8F00FF;
+    text-shadow: 5px 0px 3px black, 5px 0px 10px #8F00FF;
+
+}
+
+.projects img{
+    width: 45%;
+    margin-top: 5%;
+    margin-left: 2%;
+
+    border: 1.5px solid black;
+    box-shadow: 2px 2px 10px #8F00FF, 2px 2px 15px black;
+}
+
+.projects h2{
+    margin-left: 25px;
+    text-decoration: underline #8F00FF;
+
+}
+
+.projects p{
+    font-size: 15px;
+    margin-left: 25px;
+    color: #606163;
+}
+
+.project img{
+    width: 45%;
+    margin-top: -25%;
+    margin-right: 2%;
+    border: 1px solid black;
+    box-shadow: 0 0 20px 0 #999;
+    float: right;
+}
+
+.project h2{
+    float:right;
+    text-decoration: underline #8F00FF;
+    margin-top: -40px ;
+    margin-right: 390px;
+}
+
+.project p{
+    color: #606163;
+    margin-left: 665px;
+    margin-top: -100px;
+}
+
+.project-2 img{
+    width:45%;
+    margin-top: 10%;
+    margin-left: 30%;
+    border: 1px solid black;
+    box-shadow: 0 0 20px 0 #999;
+    }
+
+.project-2 h2{
+    margin-left: 375px;
+    text-decoration: underline #8F00FF;
+}
+
+.project-2 p{
+    color: #606163;
+    margin-left: 375px ;
+}
+
+.contact-us-page{
+    height: 100%;
+    width: 100%;
+    background: #edf2fc;
+
+
+}
+
+.contact-us h2{
+    text-align: center;
+    font-size: 35px;
+    color: #8F00FF;
+    text-shadow:5px 0px 3px black, 5px 0px 10px #8F00FF;
+}
+
+form{
+    margin: 35px;
+}
+
+.contact-info{
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 #999;
+    margin-top: 30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 1%;
+    box-shadow: 2px 2px 10px #8F00FF, 2px 2px 15px black;
+
+}
+
+.entryField{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1.5px solid black;
+    border-radius: 14px;
+    outline: none;
+    box-shadow: 2px 2px 10px #8F00FF, 2px 2px 15px black;;
+}
+
+.entryField-2{
+    width: 90px;
+    height: 25px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+}
+
+select {
+    width: 100px;
+    height: 40px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1.5px solid black;
+    border-radius: 4px;
+    background-color: #8F00FF;
+    box-shadow: 2px 2px 10px #8F00FF, 2px 2px 15px black;;
+  }
+
+
+.textarea-field{
+    height: 150px;
+    padding-top: 10px;
+
+}
+
+.submit{
+    display: block;
+    border-radius: 20px;
+    color: black;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #8F00FF;
+    font-size: 12px;
+    border: 1.5px solid black;
+    box-shadow: 2px 2px 10px #8F00FF, 2px 2px 15px black;
+    cursor:pointer;
+}
+
+.contact-us h3{
+    font-size:25px;
+    margin-top: 2%;
+    margin-left: 1%;
+
+}
+
+.info-box {
+    border:none;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: #fff ;
+    box-shadow: 0 0 20px 0 #999, 2px 2px 10px #8F00FF, 2px 2px 15px black ;
+  }
+
+  .info-box h2 {
+    margin-top: 0;
+  }
+
+  .info-box h5{
+    font-size: 15px;
+  }
+
+  .info-box p {
+    margin: 10px 0;
+  }
+
+  .info-box strong {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+#fut{
+    margin-top: 50%;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    }
+
+/* Customize the scrollbar for WebKit browsers (Chrome and Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: white /* Use website's background color */
+  }
+
+  /* Customize the scrollbar thumb (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #BE93E4; /* Use  website's text color */
+    border-radius: 5px; /* Round the corners of the thumb */
+  }
+
+  /* Customize the scrollbar track (the non-draggable part) */
+  ::-webkit-scrollbar-track {
+    background-color: var(--background-color); /* Use  website's background color */
+  }
+
+  /* Customize the scrollbar corner (where vertical and horizontal scrollbars meet) */
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+
+/*Media queries for screens smaller than 960px and 600px*/
+    @media screen and (max-width:960px)  {
+        .col{
+          flex: 100%;
+          max-width: 80%;
+        }
+        #skills{
+            background-image: url('pankaj-patel-Fi-GJaLRGKc-unsplash.jpg');
+            background-size: cover;
+        }
+        .founder img{
+            flex: 100%;
+            max-width: 80%;
+        }
+        .founderName{
+            font-size: 10px;
+            margin-left: 35%;
+            margin-top: -12%;
+        }
+        .founder h3{
+            font-size: 7px;
+            margin-left: 36%;
+            margin-top: 2%;
+        }
+        .founder blockquote{
+            font-size: 8px;
+            margin-left: 32%;
+            margin-top: 2%;
+        }
+        .founder-2 img{
+            flex: 100%;
+            max-width: 80%;
+        }
+        .founderName-2{
+            font-size: 10px;
+            margin-left: 35%;
+            margin-top: -12%;
+        }
+        .founder-2 h3{
+            font-size: 7px;
+            margin-left: 36%;
+            margin-top: 2%;
+        }
+        .founder-2 blockquote{
+            font-size: 8px;
+            margin-left: 32%;
+            margin-top: 2%;
+        }
+        .img-box img{
+            height: 50%;
+            position: absolute;
+
+        }
+
+        .projects h2{
+            font-size: 13px;
+        }
+        .projects p{
+            font-size: 7.5px;
+        }
+
+        .project h2{
+            font-size: 13px;
+            margin-left:200px;
+        }
+
+        .project p{
+            font-size: 7.5px;
+            margin-left:200px;
+        }
+
+        .project-2 h2{
+            font-size: 13px;
+            margin-left:200px;
+        }
+        .project-2 p{
+            font-size: 7.5px;
+            margin-left:200px;
+        }
+
+        .contact-info{
+            width: 75%;
+            height: 85%;
+        }
+
+        .contact-us h2{
+            margin-top: 10%;
+        }
+
+        .entryField{
+            width: 75%;
+            height: 75%;
+        }
+
+        .submit{
+            width: 20%;
+            height:50%;
+
+        }
+
+        .info-box{
+            width: 10%;
+            height: 20%;
+        }
+}
+
+@media screen and (max-width:600px) {
+        .col{
+          flex: 100%;
+          max-width: 100%;
+        }
+        #skills{
+            background-image: url('pankaj-patel-Fi-GJaLRGKc-unsplash.jpg');
+            background-size: cover;
+        }
+        .founder img{
+            flex: 100%;
+            max-width: 80%;
+        }
+        .founderName{
+            font-size: 10px;
+            margin-left: 35%;
+            margin-top: -12%;
+        }
+        .founder h3{
+            font-size: 7px;
+            margin-left: 36%;
+            margin-top: 2%;
+        }
+        .founder blockquote{
+            font-size: 8px;
+            margin-left: 32%;
+            margin-top: 2%;
+        }
+        .founder-2 img{
+            flex: 100%;
+            max-width: 80%;
+        }
+        .founderName-2{
+            font-size: 10px;
+            margin-left: 35%;
+            margin-top: -12%;
+        }
+        .founder-2 h3{
+            font-size: 7px;
+            margin-left: 36%;
+            margin-top: 2%;
+        }
+        .founder-2 blockquote{
+            font-size: 8px;
+            margin-left: 32%;
+            margin-top: 2%;
+        }
+        .submit{
+            width: 20%;
+            height:50%;
+            margin-top: 10%;
+
+        }
+        }

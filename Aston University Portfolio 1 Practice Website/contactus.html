@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/Images & Icons/favicon-48x48.png">
+</head>
+<body>
+    <div class="contact-us-page">
+    <nav>
+        <img src="/Images & Icons/IMG_2366.png" class="logo" alt="This image is not supported on this browser">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</div>
+<!--Main section containing the contact form-->
+<main>
+ <section class="contact-us">
+    <h2>Contact <span>Us</span></h2>
+
+    <div class="contact-info">
+        <form>
+        <input type="text" id="name" class="entryField" placeholder="Your Name">
+        <input type="email" id= "email" class="entryField" placeholder="Enter Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        <input type="email" id= "confirmation-email" class="entryField" placeholder="Confirm Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        <input type="tel" id="phoneNum" class="entryField" placeholder="Phone Number">
+        <input type="text" id="projectName" class="entryField" placeholder="Project Name">
+        <label for="contactMethod"  class="entryField-2">Start Date:</label>
+        <input type="date" id="proposed-start-date" class="entryField-2">
+        <label for="contactMethod" class="entryField-2">Deadline:</label>
+        <input type="date" class="entryField-2">
+        <textarea class="entryField textarea-field" placeholder="Project details"></textarea>
+        <h4>Preferred method of contact:</h4>
+        <select class="contact-method" id="contactMethod">
+            <option value="Email" id="Emaill">Email</option>
+            <option value="SMS" id="SMSS">SMS</option>
+        </select>
+        <button type="button" class="submit">Submit</button>
+        </form>
+    </div>
+    <!--Additional contact-->
+    <div class="info-box">
+        <h5>For any other enquiries contact me directly:</h5>
+        <p><strong>Name:</strong> Bassit Irfan</p>
+        <p><strong>Email:</strong><a href="mailto:220115890@aston.ac.uk">
+            220115890@aston.ac.uk</a></p>
+        <p><strong>Student ID:</strong>220115890</p>
+      </div>
+      
+ </section>
+</main>
+
+<footer id="fut">
+    <div class="footer-info">
+      <h2>codeCrafters</h2>
+      <p>Visit us on our socials</p>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <p>Copyright © 1995-2023</p>
+    </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
